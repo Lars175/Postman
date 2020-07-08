@@ -19,7 +19,7 @@ class PostmanEchoTest {
 // Проверки
         .then()
                 .statusCode(200)
-                .body("data", equalTo("name"));
+                .body("data", equalTo("balance"));
 
 
     }
@@ -32,7 +32,7 @@ class PostmanEchoTest {
                 .post("/post")
         .then()
                 .statusCode(200)
-                .body("data", equalTo("currency:RUB"));
+                .body("data", equalTo("currency:USD"));
     }
 
 }
